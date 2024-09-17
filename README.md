@@ -23,7 +23,7 @@ It can be run through python, but we recommend building it into an executable fi
 python -m nuitka --onefile --standalone --windows-console-mode=disable --follow-imports "URLs Editor.py"
 ```
 Do not use the ```--windows-console-mode``` option when building for non-Windows environments. Instead, execute ```nuikta -h``` command to check the options for each OS and use them.<br>
-Using Nuitka will create a lighter and faster application than a fret build, although the app icon will not be correctly configured.
+Using Nuitka will create a lighter and faster application than a ```flet build```, although the app icon will not be correctly configured.
 
 
 ## How To

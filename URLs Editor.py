@@ -513,12 +513,7 @@ seed_f
 
 </script>
 <footer>
-<br><br><br>URL Station (Generation) 1.0.0<br>&copy; 2024 Mel's Rough Sketch Lab. All rights reserved.<br>
-
-The information on this website is subject to change without notice.<br>
-Unauthorized use and/or duplication of this material without express and written permission from this site's author and/or owner is strictly prohibited.<br>
-All other company names, product names, and service names mentioned in this website are trademarks, registered trademarks, or trade names of their respective holders.<br>
-Redistribution or reproduction of any content or parts thereof without express and written permission is strictly prohibited.<br>
+<br><br><br>URL Station (Generation) 1.0.0<br>
 </footer>
 </body>
 </html>
