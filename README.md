@@ -3,7 +3,6 @@
 
 ## Introduction
 The Code Repository for Python implementation of bookmarks by flet.
-(For Japanese speakers.)
 
 ## Getting Started
 
