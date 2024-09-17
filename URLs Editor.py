@@ -617,7 +617,8 @@ def de_double_backslash(string: str):
                 continue
             else:
                 back_slash_flag = True
-        back_slash_flag = False
+        else:
+            back_slash_flag = False
         ret_string.append(char)
 
     return "".join(ret_string)
