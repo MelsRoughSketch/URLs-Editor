@@ -700,9 +700,9 @@ def load_urls(page):
                     ):
                         pointer.detail_name.read_only = True
                         pointer.detail_name.icon = ft.icons.LOCK_OUTLINE_ROUNDED
-            if content.strip().startswith("""<span class="key-viewer">"""):
+            if content.strip().startswith("""<span class="key"""):
                 match = re.search(
-                    r'<span class="key-viewer">\[(.*?)\]</span>.*?href="(.*?)".*?>(.*?)</a>',
+                    r'">\[(.*?)\]</span>.*?href="(.*?)".*?>(.*?)</a>',
                     content.strip(),
                 )
                 if match:
