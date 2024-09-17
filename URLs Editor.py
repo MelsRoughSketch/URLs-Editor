@@ -1332,33 +1332,21 @@ class UrlLink(ft.Row):
             key_string = ""
         elif self.drop_mune.value == "Alt":
             key_string = """<span class="key-viewer-fullopen">[Alt]</span>"""
-            if JAVASCRIPT_KEYDOWNS == []:
-                if_statement = "    if"
-            else:
-                if_statement = "    else if"
             JAVASCRIPT_KEYDOWNS.append(
-                f" {if_statement} ({KEY_CODE_DICT['Alt']})" + "{\n"
+                f" if ({KEY_CODE_DICT['Alt']})" + "{\n"
                 rf" window.open('{double_backslash(sunitize(self.url.value))}','_blank','noopener noreferrer');"
                 + "\n}"
             )
         elif self.drop_mune.value == "Shift + Space":
-            if JAVASCRIPT_KEYDOWNS == []:
-                if_statement = "    if"
-            else:
-                if_statement = "    else if"
             JAVASCRIPT_KEYDOWNS.append(
-                f" {if_statement} ({KEY_CODE_DICT['Shift + Space']})" + "{\n"
+                f" if ({KEY_CODE_DICT['Shift + Space']})" + "{\n"
                 rf" window.open('{double_backslash(sunitize(self.url.value))}','_blank','noopener noreferrer');"
                 + "\n}"
             )
             key_string = """<span class="key-viewer-fullopen">[Shift + Space]</span>"""
         else:
-            if JAVASCRIPT_KEYDOWNS == []:
-                if_statement = "    if"
-            else:
-                if_statement = "    else if"
             JAVASCRIPT_KEYDOWNS.append(
-                f" {if_statement} ({KEY_CODE_DICT[self.drop_mune.value]})" + "{\n"
+                f" if ({KEY_CODE_DICT[self.drop_mune.value]})" + "{\n"
                 rf" window.open('{double_backslash(sunitize(self.url.value))}','_blank','noopener noreferrer');"
                 + "\n}"
             )
