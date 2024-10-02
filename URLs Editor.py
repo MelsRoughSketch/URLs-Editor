@@ -519,6 +519,14 @@ seed_f
 </html>
 """
 
+ESCAPE_CHAR = {
+    "<": "&lt;",
+    ">": "&gt;",
+    "&": "&amp;",
+    '"': "&quot;",
+    "`": "&#x60;",
+}
+
 COLOR_PALLETE = [
     ft.colors.LIGHT_BLUE_300,
     ft.colors.GREEN_300,
@@ -591,13 +599,15 @@ DETAIL_ID = 0
 
 
 def escape_quorts(string: str):
-    string = re.sub(r'"', "&quot;", string)
+    for k, v in ESCAPE_CHAR.items():
+        string = string.replace(k, v)
     string = re.sub(r"'", r"\'", string)
     return string
 
 
 def de_escape_quorts(string: str):
-    string = re.sub("&quot;", '"', string)
+    for k, v in ESCAPE_CHAR.items():
+        string = string.replace(v, k)
     string = re.sub(r"\\'", "'", string)
     return string
 
